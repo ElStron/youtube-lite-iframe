@@ -1,0 +1,27 @@
+{
+  "name": "youtube-lite-iframe",
+  "version": "1.0.0",
+  "description": "Simple web componet that renders the youtube iframe only when you click on the video thumbnail. This way it avoids the immediate loading of youtube resources, helping the performance of your website.",
+  "main": "dist/index.js",
+  "browser": "dist-browser/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./component": "./src/component.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElStron/youtube-lite-iframe.git"
+  },
+  "scripts": {
+    "build-node": "tsc src/index.ts --outDir dist",
+    "build-browser": "tsc src/index.ts --module ES6 --outDir dist-browser",
+    "build": "npm run build-node && npm run build-browser"
+  },
+  "keywords": ["youtube", "iframe", "lite","astro", "embed", "youtube-lite"],
+  "author": "Stron",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  }
+}

@@ -1,0 +1,14 @@
+---
+interface Props {
+    src?: string;
+    id?: string;
+    startAt?: number;
+    title?: string;
+}
+
+const { src, id, startAt, title, ...attrs } = Astro.props as Props;
+
+---
+
+<yt-lite src={src} id={id} startAt={startAt} title={title} {...attrs}>
+</yt-lite>

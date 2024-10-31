@@ -1,0 +1,2 @@
+export {default as YoutubeEmbed} from "./YoutubeEmbed.astro";
+export const liteYoutube = ({id, title, startAt}: {id: string, title: string, startAt: number}) => `<fast-youtube id="${id}" title="${title}" start-at="${startAt}"></fast-youtube>`
