@@ -1,6 +1,6 @@
 {
   "name": "youtube-lite-iframe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple web componet that renders the youtube iframe only when you click on the video thumbnail. This way it avoids the immediate loading of youtube resources, helping the performance of your website.",
   "main": "dist/index.js",
   "browser": "dist-browser/index.js",
