@@ -13,6 +13,7 @@ Import component and liteYoutube function
 <head>
 <script>
 import { liteYoutubeIframe } from "youtube-lite-iframe"
+</script>
 </head>
 ```
 ```javascript
