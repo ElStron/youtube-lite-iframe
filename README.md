@@ -23,6 +23,8 @@ Import component and liteYoutube function
 </head>
 ```
 ```javascript
+  import { liteYoutube } from "youtube-lite-iframe";
+
   liteYoutube({
     id: "vs-5674"
     title: "Example"
