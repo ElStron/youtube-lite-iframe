@@ -38,7 +38,7 @@ export class liteYoutubeIframe extends HTMLElement {
      */
     static get style() : string {
         return `
-            fast-youtube > .play__container {
+            yt-lite > .play__container {
                 position: relative;
                 min-width: 100%;
                 height: 100%;
@@ -48,7 +48,7 @@ export class liteYoutubeIframe extends HTMLElement {
                 aspect-ratio: 16/9;
             }
 
-            fast-youtube > .play__container > .play__button {
+            yt-lite > .play__container > .play__button {
                 width: 68px;
                 height: 48px;
                 background: transparent;
@@ -62,7 +62,7 @@ export class liteYoutubeIframe extends HTMLElement {
                 }
             }
             
-            fast-youtube > .title__container {
+            yt-lite > .title__container {
                 position:absolute;
                 top:0;
                 left:0;
@@ -77,7 +77,7 @@ export class liteYoutubeIframe extends HTMLElement {
                 }
             }
 
-            fast-youtube {
+            yt-lite {
                 position: relative;
                 display: block;
                 width: 100%;
@@ -91,7 +91,7 @@ export class liteYoutubeIframe extends HTMLElement {
                 
             }
 
-            fast-youtube > iframe {
+            yt-lite > iframe {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -99,7 +99,7 @@ export class liteYoutubeIframe extends HTMLElement {
                 height: 100%;
             }
 
-            fast-youtube, iframe {
+            yt-lite, iframe {
                 border-radius: 20px;
                 border: 2px solid #362548;    
             }
