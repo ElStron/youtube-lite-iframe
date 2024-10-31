@@ -1,6 +1,14 @@
 ## Basic usage Astro
+```html
+<head>
+  <script> import { liteYoutubeIframe } from 'youtube-lite-iframe/component';</script>
+</head>
+```
 Use Id video or Src 
 ```html
+---
+import { YoutubeEmbed } from "youtube-lite-iframe";
+---
 <YoutubeEmbed
   id="Jvd-d4"
   title="Example"
@@ -11,9 +19,7 @@ Use Id video or Src
 Import component and liteYoutube function
 ```html
 <head>
-<script>
-import { liteYoutubeIframe } from "youtube-lite-iframe"
-</script>
+  <script> import { liteYoutubeIframe } from 'youtube-lite-iframe/component';</script>
 </head>
 ```
 ```javascript
