@@ -170,7 +170,7 @@ export class liteYoutubeIframe extends HTMLElement {
      * @returns The video ID if found, otherwise null.
      */
     private getId( src: string ): string | null {
-        const regex = /https:\/\/www\.youtube\.com\/embed\/([a-zA-Z0-9]+)/;
+        const regex = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([^#&?\s]*)/i;
         const match = src.match(regex);
         return match ? match[1] : new URL(src).searchParams.get("v");
     }
